@@ -1,0 +1,32 @@
+.biography-container {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  position: relative;
+  align-items: center;
+
+  & .biography-img-container {
+    width: 60%;
+    height: 90%;
+
+    & .biography-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  & .biography-description-container {
+    display: flex;
+    position: absolute;
+    padding: 32px;
+
+    right: 5em;
+    width: 50%;
+    background-color: brown;
+
+    & .biography-description-text {
+      font-size: 0.8rem;
+    }
+  }
+}
