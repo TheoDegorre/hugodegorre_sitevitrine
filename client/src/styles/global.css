@@ -10,6 +10,7 @@
 
 /* import des styles composants */
 @import "./components_styles/_nav-bar.css";
+@import "./components_styles/_footer.css";
 
 /* import font style */
 @import url("https://fonts.googleapis.com/css2?family=Zeyada&display=swap");
@@ -23,7 +24,7 @@
   --brown-bg-color: #c9b7ad;
 
   /* Font colors */
-  --ligth-font-color: #fff9ed;
+  --light-font-color: #fff9ed;
   --dark-font-color: #1c1402;
   --accent-font-color: #7791d8;
 
@@ -42,7 +43,12 @@
   margin: 0;
   padding: 0;
   color: var(--dark-bg-color);
+  user-select: none;
 }
+
+/* *{
+  outline: 1px solid red;
+} */
 
 body {
   padding: 0;

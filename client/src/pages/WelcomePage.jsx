@@ -1,9 +1,12 @@
 function WelcomePage() {
   return (
-    <>
-      <h1>Page Welcom</h1>
-      <h1>Page Welcome</h1>
-    </>
+    <section className="welcome-container">
+      <img
+        id="welcome-img"
+        src={`${import.meta.env.VITE_API_URL}/assets/welcome_page/landingpage_photo.jpg`}
+        alt="accordeon en noir et blanc"
+      />
+    </section>
   );
 }
 

@@ -9,11 +9,11 @@ function ProjectCard() {
           to="/"
           aria-label="lien vers page d'acceuil"
         >
-          <img
+          {/* <img
             id="logo"
             src={`${import.meta.env.VITE_API_URL}/assets/logo/logo_accordeon1.png`}
             alt="logo accordeon"
-          />
+          /> */}
           <h1 id="logo_typo">Hugo Degorre</h1>
         </NavLink>
       </section>

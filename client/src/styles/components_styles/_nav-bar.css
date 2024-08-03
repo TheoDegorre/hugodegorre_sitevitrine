@@ -7,10 +7,11 @@
   align-items: center;
   position: sticky;
   top: 0px;
+  z-index: 6;
 }
 
 .logo-group {
-  padding-left: 5em;
+  padding-left: 4em;
 
   & .logo-nav-link {
     display: flex;
@@ -26,7 +27,7 @@
 
     & #logo_typo {
       font-family: var(--signature-font-style);
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
   }
 }
@@ -39,5 +40,35 @@
   & .nav-link {
     font-size: 18px;
     font-family: var(--primary-font-style);
+  }
+
+  & .nav-link:hover {
+    scale: 1.2;
+    color: var(--accent-font-color);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo-group {
+    padding-left: 1em;
+
+    & .logo-nav-link {
+      & #logo {
+        width: 64px;
+      }
+
+      & #logo_typo {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .nav-group {
+    flex-wrap: wrap;
+    width: 60%;
+
+    & .nav-link {
+      font-size: 12px;
+    }
   }
 }

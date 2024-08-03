@@ -7,7 +7,7 @@
 
   & .biography-img-container {
     width: 60%;
-    height: 90%;
+    height: 100%;
 
     & .biography-img {
       width: 100%;
@@ -23,10 +23,31 @@
 
     right: 5em;
     width: 50%;
-    background-color: brown;
+    background-color: var(--accent-font-color);
 
     & .biography-description-text {
       font-size: 0.8rem;
     }
   }
+}
+
+@media screen and (max-width: 480px) {
+  .biography-container {
+    & .biography-img-container {
+      width: 100%;
+      height: 60%;
+    }
+
+    & .biography-description-container {
+      left: 10%;
+      width: 80%;
+
+      & .biography-description-text {
+        font-size: 0.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
 }
