@@ -4,11 +4,11 @@ const tables = require("../../database/tables");
 // The B of BREAD - Browse (Read All) operation
 const browse = async (req, res, next) => {
   try {
-    // Fetch all items from the database
-    const items = await tables.item.readAll();
+    // Fetch all projects from the database
+    const projects = await tables.project.readAll();
 
-    // Respond with the items in JSON format
-    res.json(items);
+    // Respond with the projects in JSON format
+    res.json(projects);
   } catch (err) {
     // Pass any errors to the error-handling middleware
     next(err);
@@ -18,15 +18,15 @@ const browse = async (req, res, next) => {
 // The R of BREAD - Read operation
 const read = async (req, res, next) => {
   try {
-    // Fetch a specific item from the database based on the provided ID
-    const item = await tables.item.read(req.params.id);
+    // Fetch a specific project from the database based on the provided ID
+    const project = await tables.project.read(req.params.id);
 
-    // If the item is not found, respond with HTTP 404 (Not Found)
-    // Otherwise, respond with the item in JSON format
-    if (item == null) {
+    // If the project is not found, respond with HTTP 404 (Not Found)
+    // Otherwise, respond with the project in JSON format
+    if (project == null) {
       res.sendStatus(404);
     } else {
-      res.json(item);
+      res.json(project);
     }
   } catch (err) {
     // Pass any errors to the error-handling middleware
@@ -39,14 +39,14 @@ const read = async (req, res, next) => {
 
 // The A of BREAD - Add (Create) operation
 const add = async (req, res, next) => {
-  // Extract the item data from the request body
-  const item = req.body;
+  // Extract the project data from the request body
+  const project = req.body;
 
   try {
-    // Insert the item into the database
-    const insertId = await tables.item.create(item);
+    // Insert the project into the database
+    const insertId = await tables.project.create(project);
 
-    // Respond with HTTP 201 (Created) and the ID of the newly inserted item
+    // Respond with HTTP 201 (Created) and the ID of the newly inserted project
     res.status(201).json({ insertId });
   } catch (err) {
     // Pass any errors to the error-handling middleware

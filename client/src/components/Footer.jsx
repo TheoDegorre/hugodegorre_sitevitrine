@@ -12,7 +12,7 @@ function Footer() {
       </section>
       <section className="footer-copyright">
         <p>© Hugo Degorre - all right reserved</p>
-        <p> Design & developpment Theo Degorre</p>
+        <p> Design & development Theo Degorre</p>
       </section>
     </footer>
   );
