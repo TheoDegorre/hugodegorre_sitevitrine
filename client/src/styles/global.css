@@ -11,6 +11,8 @@
 /* import des styles composants */
 @import "./components_styles/_nav-bar.css";
 @import "./components_styles/_footer.css";
+@import "./components_styles/_project-card.css";
+@import "./components_styles/_directory-card.css";
 
 /* import font style */
 @import url("https://fonts.googleapis.com/css2?family=Zeyada&display=swap");
@@ -44,6 +46,7 @@
   padding: 0;
   color: var(--dark-bg-color);
   user-select: none;
+  overflow-x: hidden;
 }
 
 /* *{

@@ -1,0 +1,9 @@
+.directory-card-container {
+  /* background-color: antiquewhite; */
+  display: flex;
+  margin: 8px;
+}
+
+#project-card-composer {
+  width: 15em;
+}

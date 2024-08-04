@@ -5,7 +5,7 @@ const router = express.Router();
 /* ************************************************************************* */
 
 
-const { browse, read, add } = require("../../../controllers/eventActions");
+const { browse, read, add } = require("../../../controllers/directoryActions");
 
 router.get("/", browse);
 router.get("/:id", read);

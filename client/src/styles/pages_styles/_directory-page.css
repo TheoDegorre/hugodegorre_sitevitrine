@@ -1,0 +1,36 @@
+.directory-page-container {
+  display: flex;
+  justify-content: center;
+}
+
+.directory-page-section {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.directory-content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.search-bar {
+  width: 20em;
+  margin: 32px;
+}
+
+.directory-card-detail {
+  display: flex;
+  gap: 16px;
+}
+
+#directory-instrumentation {
+  font-size: 0.7rem;
+  background-color: var(--accent-font-color);
+  color: white;
+  padding: 0.5em;
+  border-radius: 10px;
+}

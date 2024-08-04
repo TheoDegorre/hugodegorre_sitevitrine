@@ -23,7 +23,7 @@ function ProjectCard() {
           to="/biography"
           aria-label="lien vers page Biographie"
         >
-          Biographie
+          BIOGRAPHIE
         </NavLink>
 
         <NavLink
@@ -31,7 +31,7 @@ function ProjectCard() {
           to="/project"
           aria-label="lien vers page projets"
         >
-          Projets
+          PROJETS
         </NavLink>
 
         <NavLink
@@ -39,7 +39,7 @@ function ProjectCard() {
           to="/event"
           aria-label="lien vers page évènements"
         >
-          Evènements
+          ÉVÉNEMENTS
         </NavLink>
 
         <NavLink
@@ -47,7 +47,7 @@ function ProjectCard() {
           to="/directory"
           aria-label="lien vers page répertoire"
         >
-          Repertoire
+          REPERTOIRE
         </NavLink>
 
         <NavLink
@@ -55,7 +55,7 @@ function ProjectCard() {
           to="/contact"
           aria-label="lien vers page contact"
         >
-          Contact
+          CONTACT
         </NavLink>
 
         <NavLink
@@ -63,7 +63,7 @@ function ProjectCard() {
           to="/admin"
           aria-label="lien vers page admin"
         >
-          Admin
+          ADMIN
         </NavLink>
       </section>
     </nav>
