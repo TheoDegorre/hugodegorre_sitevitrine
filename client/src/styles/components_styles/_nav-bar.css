@@ -36,6 +36,8 @@
   justify-content: space-around;
   align-items: center;
   width: 50%;
+  overflow-y: hidden;
+  margin-right: 10px;
 
   & .nav-link {
     font-size: 18px;

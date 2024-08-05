@@ -41,6 +41,7 @@ const router = createBrowserRouter([
       {
         path: "/event",
         element: <EventPage />,
+        loader: () => fetch(`${import.meta.env.VITE_API_URL}/api/event/`),
       },
       {
         path: "/event/:id",
