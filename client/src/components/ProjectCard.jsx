@@ -7,7 +7,7 @@ function ProjectCard({ title, photo, id }) {
       <img
         id="project-card-img"
         src={import.meta.env.VITE_API_URL + photo}
-        alt="illustration de recette"
+        alt="illustration de projet"
       />
       <h2 id="project-card-title">{title}</h2>
     </NavLink>

@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import { ProtectedRoute } from "react";
 
 import App from "./App";
 
@@ -12,6 +13,12 @@ import DetailEventPage from "./pages/DetailEventPage";
 import DirectoryPage from "./pages/DirectoryPage";
 import ContactPage from "./pages/ContactPage";
 import AdminPage from "./pages/AdminPage";
+
+// // Function to get the access token from cookies
+// const getAccessToken = () => Cookies.get('accessToken');
+
+// // Function to check if the user is authenticated
+// const isAuthenticated = () => !getAccessToken();
 
 const router = createBrowserRouter([
   {
@@ -57,8 +64,14 @@ const router = createBrowserRouter([
         element: <ContactPage />,
       },
       {
-        path: "/admin",
-        element: <AdminPage />,
+        element: <ProtectedRoute />,
+        // isAuthenticated={isAuthenticated()}
+        children: [
+          {
+            path: "/admin",
+            element: <AdminPage />,
+          },
+        ],
       },
     ],
   },

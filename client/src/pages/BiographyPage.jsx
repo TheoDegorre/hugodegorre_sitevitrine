@@ -1,4 +1,9 @@
+// import { useContext } from "react";
+// import { ToastContainer } from "react-toastify";
+// import KeyboardProvider from "../context/AuthKeyboard";
+
 function BiographyPage() {
+ 
   return (
     <section className="biography-container">
       <figure className="biography-img-container">
@@ -46,6 +51,7 @@ function BiographyPage() {
           expertise en enseignant l'accordéon au conservatoire de Strasbourg.
         </p>
       </article>
+      {/* <ToastContainer position="bottom-right" /> */}
     </section>
   );
 }
