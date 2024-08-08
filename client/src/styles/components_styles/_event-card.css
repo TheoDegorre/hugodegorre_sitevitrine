@@ -1,0 +1,13 @@
+.event-card {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2em;
+}
+
+.event-card-detail {
+  display: flex;
+  gap: 3em;
+}

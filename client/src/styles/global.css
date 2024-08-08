@@ -13,6 +13,7 @@
 @import "./components_styles/_footer.css";
 @import "./components_styles/_project-card.css";
 @import "./components_styles/_directory-card.css";
+@import "./components_styles/_event-card.css";
 
 /* import font style */
 @import url("https://fonts.googleapis.com/css2?family=Zeyada&display=swap");
@@ -49,9 +50,9 @@
   overflow-x: hidden;
 }
 
-* {
+/* * {
   outline: 1px solid red;
-}
+} */
 
 body {
   padding: 0;

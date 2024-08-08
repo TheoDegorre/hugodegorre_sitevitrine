@@ -3,7 +3,6 @@
 // import KeyboardProvider from "../context/AuthKeyboard";
 
 function BiographyPage() {
- 
   return (
     <section className="biography-container">
       <figure className="biography-img-container">

@@ -18,15 +18,16 @@ function EventCard({ id, title, beginDate, endDate, city }) {
   return (
     <NavLink className="event-card" to={`/event/${id}`}>
       <h2 id="project-card-title">{title}</h2>
-
-      {netBeginDate === netEndDate ? (
-        <h2>le {netBeginDate}</h2>
-      ) : (
-        <h2 id="project-card-title">
-          Du {netBeginDate} au {netEndDate}
-        </h2>
-      )}
-      <h2 id="project-card-title">{city}</h2>
+      <div className="event-card-detail">
+        {netBeginDate === netEndDate ? (
+          <h4 id="project-card-date">le {netBeginDate}</h4>
+        ) : (
+          <h4 id="project-card-date">
+            Du {netBeginDate} au {netEndDate}
+          </h4>
+        )}
+        <h4 id="project-card-title">{city}</h4>
+      </div>
     </NavLink>
   );
 }
